@@ -96,8 +96,8 @@ func (eh *ExtendedHeader) Hash() header.Hash {
 	return eh.Commit.BlockID.Hash.Bytes()
 }
 
-func (eh *ExtendedHeader) Height() uint64 {
-	return uint64(eh.Commit.Height)
+func (eh *ExtendedHeader) Height() string {
+	return eh.Commit.Height
 }
 
 func (eh *ExtendedHeader) LastHeader() header.Hash {
